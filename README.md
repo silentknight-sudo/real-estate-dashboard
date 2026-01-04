@@ -63,11 +63,7 @@ The development of the FULL STACK REAL ESTATE ADMIN DASHBOARD is finished but st
 - [Example resource 2]() - 
 
 ## Author
-
-- Website - [Earl Villapaz](https://iearl-v.me/)
-- Frontend Mentor - [@iEarlG](https://www.frontendmentor.io/profile/iEarlG)
-- Twitter - [@itseaaarloffcl](https://www.twitter.com/itseaaarloffcl)
-
+@silentknight-sudo
 
 ## Acknowledgments
 
