@@ -7,6 +7,7 @@ import Home from "./Home";
 import { Login }  from "./login";
 import MyProfile from "./MyProfile";
 import PropertyDetails from "./PropertyDetails";
+import PropertiesLanding from "./PropertiesLanding";
 
 export { 
     Agent,
@@ -17,5 +18,6 @@ export {
     Home,
     Login,
     MyProfile,
-    PropertyDetails
+    PropertyDetails,
+    PropertiesLanding
 }

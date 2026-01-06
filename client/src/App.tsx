@@ -8,7 +8,7 @@ import routerProvider from "@pankod/refine-react-router-v6";
 import axios, { AxiosRequestConfig } from "axios";
 import { ColorModeContextProvider } from "contexts";
 import { Title, Sider, Layout, Header } from "components/layout";
-import { Login, Home, Agent, AgentProfile, MyProfile, PropertyDetails, AllProperties, CreateProperty, EditProperty } from "pages";
+import { Login, Home, Agent, AgentProfile, MyProfile, PropertyDetails, AllProperties, PropertiesLanding, CreateProperty, EditProperty } from "pages";
 import { CredentialResponse } from "interfaces/google";
 import { parseJwt } from "utils/parse-jwt";
 import { AccountCircleOutlined, ChatBubbleOutline, PeopleAltOutlined, StarOutlineRounded, VillaOutlined } from "@mui/icons-material";
@@ -33,7 +33,7 @@ function App() {
       const profileObj = credential ? parseJwt(credential) : null;
 
       if(profileObj) {
-        const response = await fetch('https://real-estate-dashboard-b1p7.onrender.com/api/v1/users', {
+        const response = await fetch('http://localhost:8080/api/v1/users', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -100,7 +100,7 @@ function App() {
       <GlobalStyles styles={{ html: { WebkitFontSmoothing: "auto" } }} />
       <RefineSnackbarProvider>
         <Refine
-          dataProvider={dataProvider("https://real-estate-dashboard-b1p7.onrender.com/api/v1")}
+          dataProvider={dataProvider("http://localhost:8080/api/v1")}
           notificationProvider={notificationProvider}
           ReadyPage={ReadyPage}
           catchAll={<ErrorComponent />}
@@ -113,7 +113,7 @@ function App() {
             // },
             {
               name: "properties",
-              list: AllProperties,
+              list: PropertiesLanding,
               show: PropertyDetails,
               create: CreateProperty,
               edit: EditProperty,
