@@ -3,7 +3,7 @@ import React from 'react';
 import { useList } from '@pankod/refine-core';
 import { Box, Typography, Stack } from '@pankod/refine-mui';
 
-import { PropertyReferrals, PropertyCards, TopAgents, TotalRevenue, PieChart, SupportChatBox } from 'components';
+import { PropertyReferrals, PropertyCards, TopAgents, TotalRevenue, PieChart, SupportChatBox, ChatStatsWidget } from 'components';
 
 
 const Home = () => {
@@ -56,6 +56,10 @@ const Home = () => {
           series={[75, 25]}
           colors={["#2ED480", "#475BE8"]}
         />
+      </Box>
+
+      <Box mt="25px">
+        <ChatStatsWidget />
       </Box>
 
       <Stack 
