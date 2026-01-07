@@ -8,7 +8,7 @@ import routerProvider from "@pankod/refine-react-router-v6";
 import axios, { AxiosRequestConfig } from "axios";
 import { ColorModeContextProvider } from "contexts";
 import { Title, Sider, Layout, Header } from "components/layout";
-import { Login, Home, Agent, AgentProfile, MyProfile, PropertyDetails, AllProperties, PropertiesLanding, CreateProperty, EditProperty } from "pages";
+import { Login, Home, Agent, AgentProfile, MyProfile, PropertyDetails, AllProperties, PropertiesLanding, CreateProperty, EditProperty, ChatManagement } from "pages";
 import { CredentialResponse } from "interfaces/google";
 import { parseJwt } from "utils/parse-jwt";
 import { AccountCircleOutlined, ChatBubbleOutline, PeopleAltOutlined, StarOutlineRounded, VillaOutlined } from "@mui/icons-material";
@@ -132,7 +132,7 @@ function App() {
             },
             {
               name: "messages",
-              list: Home,
+              list: ChatManagement,
               icon: <ChatBubbleOutline />
             },
             {
