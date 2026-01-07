@@ -3,7 +3,7 @@ import React from 'react';
 import { useList } from '@pankod/refine-core';
 import { Box, Typography, Stack } from '@pankod/refine-mui';
 
-import { PropertyReferrals, PropertyCards, TopAgents, TotalRevenue, PieChart } from 'components';
+import { PropertyReferrals, PropertyCards, TopAgents, TotalRevenue, PieChart, SupportChatBox } from 'components';
 
 
 const Home = () => {
@@ -22,6 +22,7 @@ const Home = () => {
 
   return (
     <Box>
+      <SupportChatBox />
       <Typography
         fontSize={25}
         fontWeight={700}

@@ -1,6 +1,7 @@
 import Profile from "./common/Profile";
 import PropertyCards from "./common/PropertyCards";
 import CustomBtn from "./common/CustomBtn";
+import SupportChatBox from "./common/SupportChatBox";
 
 import PieChart from "./charts/PieCharts";
 import PropertyReferrals from "./charts/PropertyReferrals";
@@ -13,6 +14,7 @@ export {
     Profile,
     PropertyCards,
     CustomBtn,
+    SupportChatBox,
     PieChart,
     PropertyReferrals,
     TotalRevenue,

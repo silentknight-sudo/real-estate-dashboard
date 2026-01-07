@@ -5,6 +5,7 @@ import cors from 'cors';
 import connectDB from './mongodb/connect.js';
 import userRouter from './routes/user.routes.js';
 import propertyRouter from './routes/property.routes.js';
+import chatRouter from './routes/chat.routes.js';
 
 dotenv.config();
 
@@ -18,6 +19,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/v1/users', userRouter);
 app.use('/api/v1/properties', propertyRouter);
+app.use('/api/v1/chats', chatRouter);
 
 const startServer = async () => {
     try {
